@@ -1,0 +1,59 @@
+/**
+ * @license
+ * Visual Blocks Language
+ *
+ * Copyright 2012 Google Inc.
+ * https://developers.google.com/blockly/
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+ /**
+ * @fileoverview Generating Python for importing python module blocks.
+ * @author conner.jeong@gmail.com
+ */
+
+//'use strict';
+
+//goog.provide('Blockly.Python.import_python_gen');
+//goog.require('Blockly.Python');
+
+Blockly.Python['import_cv2'] = function(block) {
+    var code = "import cv2\r\n";
+    return code;
+};
+
+Blockly.Python['import_numpy'] = function(block) {
+    var code = "import numpy as np\r\n";
+    return code;
+};
+
+Blockly.Python['import_time'] = function(block) {
+    var code = "import time\r\n";
+    return code;
+};
+
+Blockly.Python['import_robot_control'] = function(block) {
+    var code = "import sys\r\nsys.path.append('/home/conner/cobit_blockly')\r\nimport robot_control_mk1 as rc\r\n\nBASE = 'a'\nSHOULDER = 'b'\nELBOW = 'c'\nWRIST_UD = 'd'\nWRIST_TURN = 'e'\nGRIPPER = 'f'\r\n\n";
+    return code;
+};
+
+Blockly.Python['import_socket'] = function(block) {
+    var code = "import socket\r\n";
+    return code;
+};
+
+Blockly.Python['import_urllib'] = function(block) {
+    var code = "import urllib.request\r\n";
+    return code;
+};
